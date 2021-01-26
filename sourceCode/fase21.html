@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fase 2.1</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="js/fase21.js"></script>
+ 
+</head>
+<body>
+
+    <header>
+         <nav>
+            <ul class="menu">
+            <li><a href="menu.html">Menú</a></li>
+            <li  class="active">Fase 2.1</li>
+            <li>Fase 2.2</li>
+            <li>Fase 2.3</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="intro">
+     <div class="row">
+        <div class="twelve columns blank">
+          <p class="intro-text">Complete a tabela fornecendo os dados de quantos cromossomos, quantas moléculas de DNA e qual a quantidade de DNA que são detectados em uma célula 2n=4 em cada um dos estágios do ciclo celular.
+            Enquanto você completa a tabela, o gráfico abaixo será construído.</p>
+          <div class="six columns">
+              <table class="u-full-width t-fase21">
+                  <thead>
+                      <tr>
+                          <th>ESTÁGIO</th>
+                          <th>Nº DE MOLÉCULAS DE DNA POR CÉLULA</th>
+                          <th>C=quantidade de DNA</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>G1</td>
+                      <td><input type="text" id="G1"></td>
+                      <td><input type="text" id="G1C"></td>
+                    </tr>
+                    <tr>
+                      <td>S</td>
+                      <td><input type="text" id="S"></td>
+                      <td><input type="text" id="SC"></td>
+                    </tr>
+                    <tr>
+                      <td>G2</td>
+                      <td><input type="text" id="G2"></td>
+                      <td><input type="text" id="G2C"></td>
+                    </tr>
+                    <tr>
+                      <td>Prófase e prometáfase</td>
+                      <td><input type="text" id="Prof"></td>
+                      <td><input type="text" id="ProfC"></td>
+                    </tr>
+                    <tr>
+                      <td>Metáfase</td>
+                      <td><input type="text" id="Met"></td>
+                      <td><input type="text" id="MetC"></td>
+                    </tr>
+                    <tr>
+                      <td>Anáfase</td>
+                      <td><input type="text" id="Ana"></td>
+                      <td><input type="text" id="AnaC"></td>
+                    </tr>
+                    <tr>
+                      <td>Telófase e citocinese</td>
+                      <td><input type="text" id="Telo"></td>
+                      <td><input type="text" id="TeloC"></td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="offset-by-four three columns check">
+            <img src="images/correcto.png" alt="" id="correct" class="hidden">
+            <img src="images/incorrecto.png" alt="" id="incorrect" class="hidden">
+            </div>
+            <div id = "charts" class="five columns graphic hide">GRAFICA</div>
+            <div class="offset-by-two six columns">
+                <a class="button icon verificar" onclick = "validar()" id="verificar">Verificar<span></span></a>
+                <a class="button icon reiniciar" href="javascript:location.reload()">Reiniciar<span></span></a>
+                <a class="button icon avanzar hide" id="avanzar" href="fase22.html">Avanzar<span></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

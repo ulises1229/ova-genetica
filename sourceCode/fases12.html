@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  1.-AÑADÍ ALGUNAS CLASES A LOS CONTENEDORES PARA PODER DIFERENCIAR LOS QUE CONTIENEN 3, Y LOS QUE TIENEN 2 
+  CROMOSOMAS, SÓLO QUE EN EL JS QUE HICISTE, TOMA SÓLO LA CLASE QUE PUSISTE Y SI LE AÑADO LA OTRA NO O TOMA..
+  ASÍ QUE DEJÉ COMENTADO EL CÓDIGO CON LA CLASE QUE NECESITO QUE AGREGUES PARA QUE TOME LOS TAMAÑOS Y ESTILOS..
+  POR FA
+  2.-HASTA ABAJO DEJO EL SCRIPT QUE HICE PARA COPIAR SOLO UNA IMAGEN..
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Fase 1.2</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+    
+  <!-- Script
+   ------------------------------------------------- -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/cromosoma12f.js"></script>
+  
+ 
+
+       
+</head>
+<body>
+    
+    <header>
+         <nav>
+            <ul class="menu">
+            <li><a href="menu.html">Menú</a></li>
+            <li>Fase 1.1</li>
+            <li class="active">Fase 1.2</li>
+            <li>Fase 1.3</li>
+            </ul>
+        </nav>
+    </header>
+     
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container fase">
+      <div class="eight columns blank title" style="margin-left:0;">Tenga en cuenta la clasificación de los cromosomas y la organización de acuerdo con el tamaño más grande a la más pequeña dentro de cada grupo.
+        </div>
+        <div class="two columns blank tools">
+        Haga clic en los cromosomas y arrastre a la ubicación deseada
+        </div>
+        <div class="eight columns activity" id="cont_f2" style="margin-left:0">
+            <div class="twelve columns division">
+                <div class="little">
+                
+                <img src="images/correcto.png" class="success" id="success">
+                <label for="success" id="felicidades" class="labelsuccess">¡Felicidades!</label>
+
+                    
+                <img src="images/correcto.png" alt="" id="correctA" class="hiddenA">
+                <img src="images/correcto.png" alt="" id="correctB" class="hiddenB">
+                <img src="images/correcto.png" alt="" id="correctC" class="hiddenC">
+                <img src="images/correcto.png" alt="" id="correctD" class="hiddenD">
+                <img src="images/correcto.png" alt="" id="correctE" class="hiddenE">
+                <img src="images/correcto.png" alt="" id="correctF" class="hiddenF">
+                <img src="images/correcto.png" alt="" id="correctG" class="hiddenG">
+                    
+                    
+                <img src="images/incorrecto.png" alt="" id="incorrectA" class="hiddenA">
+                <img src="images/incorrecto.png" alt="" id="incorrectB" class="hiddenB">
+                <img src="images/incorrecto.png" alt="" id="incorrectC" class="hiddenC">
+                <img src="images/incorrecto.png" alt="" id="incorrectD" class="hiddenD">
+                <img src="images/incorrecto.png" alt="" id="incorrectE" class="hiddenE">
+                <img src="images/incorrecto.png" alt="" id="incorrectF" class="hiddenF">
+                <img src="images/incorrecto.png" alt="" id="incorrectG" class="hiddenG">
+                
+                    
+           
+                <a class="button icon verifyB" id="verifyB" onclick="comprobarB()"><span></span>Verificar</a>
+                <a class="button icon verifyB" id="verifyC" onclick="comprobarC()"><span></span>Verificar</a>
+                <a class="button icon verifyB" id="verifyD" onclick="comprobarD()"><span></span>Verificar</a>
+                <a class="button icon verifyB" id="verifyE" onclick="comprobarE()"><span></span>Verificar</a>
+                <a class="button icon verifyB" id="verifyF" onclick="comprobarF()"><span></span>Verificar</a>
+                <a class="button icon verifyB" id="verifyG" onclick="comprobarG()"><span></span>Verificar</a>
+                
+                 <a class="button instruccionB" id="InstruccionB">Instrucciones</a>
+                 <a class="button instruccionC" id="InstruccionC">Instrucciones</a>
+                 <a class="button instruccionD" id="InstruccionD">Instrucciones</a>
+                 <a class="button instruccionE" id="InstruccionE">Instrucciones</a>
+                 <a class="button instruccionF" id="InstruccionF">Instrucciones</a>
+                 <a class="button instruccionG" id="InstruccionG">Instrucciones</a>
+                    
+                
+                
+                </div>
+                
+                <div class="three columns groups">
+                    <div class="four columns nums" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="uno"></label></div>
+                    <div class="four columns nums" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="dos"></label></div>
+                    <div class="four columns nums" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="tres"></label></div>
+                    <label>grupo a</label>
+                </div>
+                
+                <div class="two columns groups">
+                    <div class="six columns nums" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="cuatro"></label></div>
+                    <div class="six columns nums" id="cinco" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="cinco"></label></div>
+                    <div class= "numsB" id="B"></div>
+                   <label>grupo b</label>
+                </div>
+                
+                <div class="seven columns groups">
+                    <div class="columnas_grupos nums" id="seis" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="seis"></label></div>
+                    <div class="columnas_grupos nums" id="siete" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="siete"></label></div>
+                    <div class="columnas_grupos nums" id="ocho" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="ocho"></label></div>
+                    <div class="columnas_grupos nums" id="nueve" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="nueve"></label></div>
+                    <div class="columnas_grupos nums" id="diez" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="diez"></label></div>
+                    <div class="columnas_grupos nums" id="once" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="once"></label></div>
+                    <div class="columnas_grupos nums" id="doce" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="doce"></label></div>
+                    <div class= "numsC" id="C"></div>
+                    <label>grupo c</label>
+                </div>
+            </div>
+            
+            <div class="twelve columns division instrucciones">
+                <div class="four columns">
+                    <a class="button instruccion" id="instruccion">Instrucciones</a>
+                    <div class="twelve columns">
+                        <a class="button icon verify" id="verifyA" onclick="comprobarA()"><span></span>Verificar</a>
+                        <a class="button icon restart" id="reset" onclick="javascript:location.reload()"><span></span>Reintentar</a>
+                    </div>
+                </div>
+                
+                <div class="eight columns" id="instrucciones">
+                  <a onclick="cerrar()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO A: <br>Pares 1, 2 y 3. Son los mayores cromosomas, siendo que el 1 y el 3 son metacéntricos y el 2 es submetacéntrico.</p>
+                </div>
+                <div class="eight columns instB" id="instruccionesB">
+                  <a onclick="cerrarB()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO B: <br>Pares 4 y 5.  Cromosomas grandes y submetacéntricos.  La relación entre los brazos largo y corto (L/C) es mayor que en el par 2.</p>
+                </div>
+                
+                 <div class="eight columns instB" id="instruccionesC">
+                  <a onclick="cerrarC()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO C: <br>Pares 6, 7, 8, 9, 10, 11 y 12, además del cromosoma X (en el hombre 1 cromosoma X y en la mujer 2).  Es el grupo de más difícil identificación (muy parecidos entre ellos), y se recomienda que solamente se haga el alineamiento considerando el tamaño de los cromosomas y la posición del centrómero (submetacéntricos).</p>
+                </div>
+                
+                <div class="eight columns instB" id="instruccionesD">
+                  <a onclick="cerrarD()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO D: <br>Pares 13, 14 y 15.  Son todos acrocéntricos y de tamaño mediano. Generalmente presentan satélites en sus brazos cortos. </p>
+                </div>
+                
+                 
+                <div class="eight columns instB" id="instruccionesE">
+                  <a onclick="cerrarE()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO E: <br>pares 16, 17 y 18.  El par 16 presenta un tamaño similar al cromosoma q5, pero es metacéntrico.  Los pares 17 y 18 son submetacéntricos.  El par 18 a veces se presenta acrocéntrico. </p>
+                </div>
+                
+                <div class="eight columns instB" id="instruccionesF">
+                  <a onclick="cerrarF()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO F: <br>Pares 19 y 20.  Son cromosomas metacéntricos pequeños.  Por su forma parecen una cruz.</p>
+                </div>
+                
+                <div class="eight columns instB" id="instruccionesG">
+                  <a onclick="cerrarG()">
+                   <img src="images/incorrecto.png" alt="cerrar" class="cerrar">
+                   </a>
+                    <p>GRUPO G: <br>pares 21 y 22.  Son los cromosomas acrocéntricos menores y a veces presentan satélites en los brazos cortos.  El cromosoma Y pertenece a este grupo siendo muy semejante a los que constituyen los pares 21 y 22. </p>
+                </div> 
+                
+                
+            </div>
+            
+            <div class="twelve columns division">
+                <div class="three columns groups margin">
+                    <div class="four columns nums" id="trece" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="trece"></label></div>
+                    <div class="four columns nums" id="catorce" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="catorce"></label></div>
+                    <div class="four columns nums" id="quince" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="quince"></label></div>
+                    <div class= "numsD" id="D"></div>
+
+                    <label>grupo d</label>
+                </div>
+                
+                <div class="three columns groups margin">
+                    <div class="four columns nums" id="dieciseis" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="dieciseis"></label></div>
+                    <div class="four columns nums" id="diecisiete" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="diecisiete"></label></div>
+                    <div class="four columns nums" id="dieciocho" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="dieciocho"></label></div>
+                    <div class= "numsE" id="E"></div>
+                    <label>grupo e</label>
+                </div>
+                
+                <div class="two columns groups margin">
+                    <div class="six columns nums" id="diecinueve" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="diecinueve"></label></div>
+                    <div class="six columns nums" id="veinte" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="veinte"></label></div>
+                     <div class= "numsF" id="F"></div>
+                   <label>grupo f</label>
+                </div>
+                
+                <div class="three columns groups margin">
+                    <div class="four columns nums" id="veintiuno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="veintiuno"></label></div>
+                    <div class="four columns nums" id="veintidos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="veintidos"></label></div>
+                    <div class="four columns nums" id="xx" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"><label for="xx"></label></div>
+                    <div class= "numsG" id="G"></div>
+                    <label>grupo g</label>
+                </div>
+            </div>
+<!--
+            <div class="twelve columns buttons" style="margin-top:1px;">
+                <a class="button icon reiniciar" href="javascript:location.reload()">Reiniciar<span></span></a>
+            </div>                
+-->
+        </div>
+        <div class="two columns activity cont_cromo" id="cont_cromo" ondragenter="return enter(event)" ondragover="return over(event)"  ondrop="return drop(event)">
+           <div class="grupoCr2"> 
+                <label for="">Cromosomas</label> 
+      
+                <img id="crom5" src="images/cromosomas/5.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom12" src="images/cromosomas/12.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom3" src="images/cromosomas/3.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom4" src="images/cromosomas/4.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom17" src="images/cromosomas/17.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom6" src="images/cromosomas/6.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom18" src="images/cromosomas/18.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom8" src="images/cromosomas/8.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                </div>
+            
+            
+            <div class="grupoCr2">
+     
+                <img id="crom1" src="images/cromosomas/1.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom7" src="images/cromosomas/7.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom2" src="images/cromosomas/2.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom13" src="images/cromosomas/13.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom14" src="images/cromosomas/14.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom15" src="images/cromosomas/15.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom16" src="images/cromosomas/16.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom10" src="images/cromosomas/10.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                
+                
+            </div> 
+            
+            <div class="grupoCr2">
+                
+                <img id="crom20" src="images/cromosomas/20.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom9"  src="images/cromosomas/9.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom19" src="images/cromosomas/19.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom11" src="images/cromosomas/11.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="crom22" src="images/cromosomas/22.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img id="crom21" src="images/cromosomas/21.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">  
+                <img id="cromxx" src="images/cromosomas/xx.png" draggable="true" ondragstart="return start(event)" ondragend="return end (event)"> 
+                
+                
+            
+             </div>     
+  </div>
+  </div>
+</body>
+</html>

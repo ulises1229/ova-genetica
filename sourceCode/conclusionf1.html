@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  1.-AÑADÍ ALGUNAS CLASES A LOS CONTENEDORES PARA PODER DIFERENCIAR LOS QUE CONTIENEN 3, Y LOS QUE TIENEN 2
+  CROMOSOMAS, SÓLO QUE EN EL JS QUE HICISTE, TOMA SÓLO LA CLASE QUE PUSISTE Y SI LE AÑADO LA OTRA NO O TOMA..
+  ASÍ QUE DEJÉ COMENTADO EL CÓDIGO CON LA CLASE QUE NECESITO QUE AGREGUES PARA QUE TOME LOS TAMAÑOS Y ESTILOS..
+  POR FA
+  2.-HASTA ABAJO DEJO EL SCRIPT QUE HICE PARA COPIAR SOLO UNA IMAGEN..
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Ova Actividad</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<!--
+    <header>
+         <nav>
+            <ul class="menu">
+            <li><a href="menu.html">Menú</a></li>
+            <li class="active">Fase 1.1</li>
+            <li>Fase 1.2</li>
+            <li>Fase 1.3</li>
+            <li>Fase 1.4</li>
+            </ul>
+        </nav>
+    </header> -->
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+        <div class="eight columns blank title">
+          <b><h5>CONCLUSIÓN DE LA ACTIVIDAD 1</b></h5></b> 
+          <h6>Arrastre las palabras al lugar correcto para que el concepto tenga sentido</h6>
+        </div>
+        <div class="two columns blank tools">
+            <h6 class="caja_palabras"> <b> Caja de Palabras.</b></h6>
+        </div>
+               <div class="eight columns activity" style="margin-left:0; padding:25px;">
+          <p class="conclusion">El Genoma de un organismo es el conjunto completo del <input name="material" disabled type="text" class="drop_word"/>,  sea ADN o ARN.
+            El genoma de los organismos<input disabled type="text" class="drop_word" name="procariotos"/> esta organizado en un<input disabled type="text" class="drop_word" name="circular"/>, mientras que, en los eucariotos el material genético es organizado en un conjunto de vários cromosomas<input disabled type="text" class="drop_word" name="lineares"/>.
+            Cada<input disabled type="text" class="drop_word" name="especie"/>presenta un conjunto característico formado por números y formas diferentes de sus cromosomas, que se llama de <input disabled type="text" class="drop_word" name="cariotipo"/>.
+            La mayoria de los eucariotos son diploides, pero en plantas es comum encontrar espécies <input disabled type="text" class="drop_word" name="poli"/>.
+            En los animales se encontra poliploidia natural en los <input disabled type="text" class="drop_word" name="reptiles"/>y anfíbios.
+El genoma humano esta organizado en 23 pares de cromosomas <input disabled type="text" class="drop_word" name="homo"/>, cada cromosoma contiene<input disabled type="text" class="drop_word" name="molecula"/>, proteínas asociadas y várias moléculas de ARN, constuyendo así la <input disabled type="text" class="drop_word" name="cromatina"/>.
+Las alteraciones en el número o en la <input disabled type="text" class="drop_word" name="estructura"/>del cariotipo humano es la principal causa de abortos espontáneos y de casos de <input disabled type="text" class="drop_word" name="enfermedades"/>,  como la Síndrome de Down.</p>
+        </div>
+        <div class="two columns activity cont_cromo" id="cont_cromo" ondragenter="return enter(event)" ondragover="return over(event)"  ondrop="return drop(event)">
+          <p id="palabras">
+            <label for="" class="word" id="cariotipo">cariótipo</label>-
+            <label for="" class="word" id="molecula">una molécula de ADN</label>-
+            <label for="" class="word" id="estructura">estructura</label>-
+            <label for="" class="word" id="material">material genético</label>-
+            <label for="" class="word" id="cromatina">cromatina</label>-
+            <label for="" class="word" id="especie">espécie</label>-
+            <label for="" class="word" id="reptiles">reptiles</label>-
+            <label for="" class="word" id="procariotos">procariotos</label>-
+            <label for="" class="word" id="enfermedades">enfermedades</label>-
+            <label for="" class="word" id="lineares">lineares</label>-
+            <label for="" class="word" id="poli">poliploides</label>-
+            <label for="" class="word" id="homo">homólogos</label>-
+            <label for="" class="word" id="circular">un cromosoma circular</label>
+          </p>
+          <div class="twelve columns" id="mas">
+            <a href="sabermas.html">
+              <img src="icons/Book-plus.png" class="more" alt="more">
+            </a>
+            <a href="sabermas.html" class="know-more">saber mas</a>
+          </div>
+        </div>
+
+<div class="six columns buttons">
+    <a class="button icon reiniciar" href="javascript:location.reload()">Reiniciar<span></span></a>
+    <a class="button icon avanzar" href="intro_fase12.html">Avanzar<span></span></a>
+ </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script  type="text/javascript" src="js/conclusionf1.js"></script>
+</body>
+</html>

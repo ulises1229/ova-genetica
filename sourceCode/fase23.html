@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>OVA Fase 2.3</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+    
+  <!-- Script
+   ------------------------------------------------- -->
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/fase23.js"></script>
+
+</head>
+<body>
+    
+    <header>
+         <nav>
+            <ul class="menu">
+            <li><a href="menu.html">Menú</a></li>
+            <li>Fase 2.1</li>
+            <li>Fase 2.2</li>
+            <li class="active">Fase 2.3</li>
+            </ul>
+        </nav>
+    </header>
+     
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container fase">
+        <div class="two columns activity_3"><p>Se voce observar uma celula em metafase, como voce determinaria se essa celula estaria em metafase da mitose l da meiose ou metafase 2 da meiose.</p><p>
+        
+        Farca a correspondencia correta. Arraste a letra ate a campo respectivo.</p>
+       
+        </div>
+         <div class="eight columns activity_2" style="margin-left:0">
+         
+         <div class="abc">
+        
+         <label>METÁFASE 2 DA MEIOSE (<input id="A" type="text" class="inciso"/>)</label>
+         <label>METÁFASE DA MITOSE (<input id="B" type="text" class="inciso"/>)</label>
+         <label>METÁFASE 1 DA MEIO SE (<input id="C" type="text" class="inciso"/>)</label>
+        </div>   
+        
+         <div class="offset-by-four three columns check">
+            <img src="images/correcto.png" alt="" id="correct" class="hidden">
+            <img src="images/incorrecto.png" alt="" id="incorrect" class="hidden">
+            </div>
+           
+           <div class="eleven columns">
+           <img class="metafase" src="images/A.png">
+           <img class="metafase" src="images/B.png">
+           <img class="metafase" src="images/C.png">
+            </div>
+            
+           
+        
+           </div> 
+      <div class="eleven columns buttons">
+    <!--<a class="button icon verificar" onclick="comprobarPuzzle()">Verificar<span></span></a> -->
+    <a class="button icon verificar" onclick="validar()">Verificar<span></span></a>
+    <a class="button icon reiniciar" href="javascript:location.reload()">Reiniciar<span></span></a>
+    <a class="button icon avanzar hide" id="avanzar" href="">Avanzar<span></span></a> 
+ </div>
+                                                                        
+    </div>
+       
+</body>
+</html>

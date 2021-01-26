@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Ova Actividad Fase 1.1</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Script
+   ------------------------------------------------- -->
+  <script type="text/javascript" src="js/cromosoma113.js"></script>
+
+</head>
+<body>
+
+    <header>
+         <nav>
+            <ul class="menu">
+            <li><a href="menu.html">Menú</a></li>
+            <li class="active">Fase 1.1</li>
+            <li>Fase 1.2</li>
+            <li>Fase 1.3</li>
+            <li>Fase 1.4</li>
+            </ul>
+        </nav>
+    </header>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container fase">
+        <div class="eight columns blank title" style="margin-left:0;">Con el material de la caja de cromosomas, representados por 2 cromatidas, organize los genomas solicitados de organismos hipoteticos con.
+        </div>
+        <div class="two columns blank tools">
+        Caja de Cromosomas
+        </div>
+        <div class="eight columns activity" style="margin-left:0">
+        <label for="">3n = 6<br>Utilice cromosomas submetacéntricos y acrocéntricos respectivamente. </label>
+        
+
+           <div class="twelve columns">
+            <div class="contenedortres">
+              <label>1</label>
+              <div class="crom2_f1 nums" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+              <div class="crom2_f1 nums" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+              <div class="crom2_f1 nums" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+            </div>
+            <div class="contenedortres">
+              <label>2</label>
+              <div class="crom2_f1 nums" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+              <div class="crom2_f1 nums" id="cinco" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+              <div class="crom2_f1 nums" id="seis" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+            </div>
+           </div>
+
+        </div>
+        <div class="two columns activity cont_cromo" id="cont_cromo" ondragenter="return enter(event)" ondragover="return over(event)"  ondrop="return drop(event)">
+            <div class="grupoCr">
+                <label for="">Metacéntrico</label>
+                <img class="meta" id="meta1" src="images/metacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="meta" id="meta2" src="images/metacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="meta" id="meta3" src="images/metacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="meta" id="meta4" src="images/metacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+
+            </div>
+            <div class="grupoCr">
+                <label for="">Submetacéntrico</label>
+                <img class="subi" id="subi1" src="images/subimetacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="subi" id="subi2" src="images/subimetacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="subi" id="subi3" src="images/subimetacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="subi" id="subi4" src="images/subimetacentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+
+            </div>
+            <div class="grupoCr">
+                <label for="">Acrocéntrico</label>
+                <img class="acro" id="acro1" src="images/acrocentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="acro" id="acro2" src="images/acrocentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="acro" id="acro3" src="images/acrocentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+                <img class="acro" id="acro4" src="images/acrocentrico.svg" draggable="true" ondragstart="return start(event)" ondragend="return end (event)">
+            </div>
+        </div>
+        
+           <div class="offset-by-four three columns check">
+            <img src="images/correcto.png" alt="" id="correct" class="hidden">
+            <img src="images/incorrecto.png" alt="" id="incorrect" class="hidden">
+            <label for="correct" id="correcto" class="hidden">correcto!</label>
+            <label for="correct" id="incorrecto" class="hidden">incorrecto!</label>
+            </div>
+
+<div class="eight columns buttons">
+    <a class="button icon verificar" onclick="comprobarPuzzle()">Verificar<span></span></a>
+    <a class="button icon reiniciar" href="javascript:location.reload()">Reintentar<span></span></a>
+    <a class="button icon avanzar hide" id="avanzar" href="fases114.html">Avanzar<span></span></a>
+ </div>
+
+  </div>
+</body>
+</html>
